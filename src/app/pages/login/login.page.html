@@ -1,0 +1,41 @@
+<ion-content >
+  
+  <div class="login">
+    <span class="title">DialecChat</span>
+  </div>
+
+  <div class="form-wrapper">
+    <form [formGroup]="credentialForm">
+      <ion-item>
+        <ion-input
+          placeholder="Adresse email"
+          formControlName="email"
+          autofocus="true"
+          clearInput="true"
+        ></ion-input>
+      </ion-item>
+      <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+        <span *ngIf="email.errors?.required">Email requis</span>
+        <span *ngIf="email.errors?.email">Email invalide</span>
+      </div>
+   
+      <ion-item>
+        <ion-input
+        placeholder="Mot de passe"
+        type="password"
+        formControlName="password"
+        clearInput="true"
+      ></ion-input>
+      </ion-item>
+      <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+        <span *ngIf="password.errors?.required">Mot de passe requis</span>
+        <span *ngIf="password.errors?.minlength">Le mot de passe doit être long de 6 caractères minimum</span>
+      </div>
+    </form>
+   
+      <ion-button (click)="signUp()" expand="full" class="btn">S'incrire</ion-button>
+      <ion-button (click)="signIn()" expand="full" class="btn" color="secondary">Se connecter</ion-button>
+  </div>
+  
+ 
+</ion-content>

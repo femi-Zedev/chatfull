@@ -1,0 +1,44 @@
+.login{
+    background-color: #3880ff;
+    height: 40%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: auto;
+}
+
+.form-wrapper{
+    height: 100%;
+    padding: 2rem 0rem;
+}
+
+ion-item{
+    margin: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.btn{
+    margin: 1.5rem 1.5rem;
+    height: 3rem;
+}
+
+:host(.button-full).button-native{
+    border-radius: 8px !important;
+}
+
+.errors {
+    font-size: small;
+    color: #fff;
+    margin: 1.5rem;
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

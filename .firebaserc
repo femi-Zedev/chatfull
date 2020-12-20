@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fire-jam1403": {
+      "hosting": {
+        "app": [
+          "fire-jam1403"
+        ]
+      }
+    }
+  }
+}
