@@ -1,0 +1,19 @@
+.chars-wrapper {
+    background-color: #444141;
+    color: #fff;
+}
+
+span.letter {
+    font-size: 28px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+.letter-wrapper {
+    width: 35px;
+    height: 42px;
+    display: table;
+    margin: 5px 3px;
+    text-align: center;
+}

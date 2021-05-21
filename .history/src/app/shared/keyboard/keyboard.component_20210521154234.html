@@ -1,0 +1,71 @@
+<div class="kboard-wrapper">
+    <div class="kboard-header">
+        <div class="menu-wrapper">
+            <img src="assets/icon/clipboard.svg" class="clipboard" />
+        </div>
+    </div>
+
+
+    <div class="d-flex j-center">
+        <div *ngFor="let letter of secondLine">
+            <div class="letter-wrapper">
+                <span class="letter" (click)="letterClick(letter)">{{letter}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex j-center">
+        <div *ngFor="let letter of thirdLine">
+            <div class="letter-wrapper">
+                <span class="letter" (click)="letterClick(letter)">{{letter}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex j-center">
+
+        <div class="letter-wrapper large-wrapper">
+            <img src="assets/icon/up.svg" class="up" (click)="goUpperCase()" />
+        </div>
+
+        <div *ngFor="let letter of fourthLine">
+            <div class="letter-wrapper  fourth-row">
+                <span class="letter" (click)="letterClick(letter)">{{letter}}</span>
+            </div>
+        </div>
+
+        <div class="letter-wrapper large-wrapper">
+            <ion-icon name="backspace" class="backsapce" (click)="backspace()"></ion-icon>
+        </div>
+
+    </div>
+
+    <div class="d-flex j-center">
+
+        <div class="letter-wrapper num">
+            <span class="letter" (click)="letterClick('123')">?123</span>
+        </div>
+
+        <div class="letter-wrapper">
+            <span class="letter" (click)="letterClick(',')">,</span>
+        </div>
+
+        <div class="letter-wrapper space">
+            <span class="letter" (click)="letterClick(' ')">Fɔngbè</span>
+        </div>
+
+        <div *ngFor="let letter of specialChars">
+            <div class="letter-wrapper">
+                <span class="letter" ion-long-press [interval]="400" (longPressed)="charLongPressed(letter.variante)"
+                    (click)="letterClick(letter.char)">{{letter.char}}</span>
+            </div>
+        </div>
+
+
+        <div class="letter-wrapper enter">
+            <span class="letter" (click)="letterClick('')">retour</span>
+        </div>
+
+    </div>
+
+</div>

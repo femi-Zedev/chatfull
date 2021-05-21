@@ -1,3 +1,12 @@
+.inline-wrapper {
+    display: flex;
+    ion-avatar {
+        max-width: 50px;
+        width: fit-content;
+        height: 50px;
+        margin-right: 8px;
+    }
+}
 .message-input {
     width: 100%;
     border: 1px solid var(--ion-color-medium);
@@ -7,26 +16,28 @@
     margin-top: 0px;
     --padding-start: 8px;
 }
- 
+
 .message {
-    padding: 10px !important;
-    border-radius: 10px !important;
+    padding: 15px !important;
+    border-radius: 21px !important;
     margin-bottom: 4px !important;
+    border-radius: 25px;
     white-space: pre-wrap;
 }
- 
+
 .my-message {
-    background: var(--ion-color-tertiary);
-    color: #fff;
+    background:#a6a6a6;
+    color: #1d1d1d;
 }
- 
+
 .other-message {
-    background: var(--ion-color-secondary);
+    background: #0f1024;
     color: #fff;
+    width: fit-content;
 }
- 
+
 .time {
-    color: #dfdfdf;
-    float: right;
-    font-size: small;
+    color: #5d5a5a;
+    font-size: 14px;
+    padding: 6px 12px;
 }

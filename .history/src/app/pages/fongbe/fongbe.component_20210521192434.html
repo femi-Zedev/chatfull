@@ -1,0 +1,18 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2 class="">Tester le clavier</h2>
+  <div class="form">
+    <div class="form-control">
+      <ion-textarea class="keyboard-test" inputmode="none" (focus)="openKeyboardModal()" (click)="openKeyboardModal()" [(ngModel)]="fongbeInput"></ion-textarea>
+    </div>
+  </div>
+
+  <!-- <span (click)="presentPopover($event)">Toggle</span> -->
+</ion-content>

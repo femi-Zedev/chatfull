@@ -1,0 +1,6 @@
+{
+	"appId": "com.chatfull.app",
+	"appName": "chatfull",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

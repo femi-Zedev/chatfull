@@ -1,0 +1,7 @@
+<div class="d-flex chars-wrapper">
+  <div *ngFor="let char of characters">
+    <div class="letter-wrapper">
+      <span class="letter" (click)="charClick(char)">{{char}}</span>
+    </div>
+  </div>
+</div>

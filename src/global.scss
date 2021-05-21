@@ -24,3 +24,28 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.keyboard-modal{
+    --height: 38%;
+    align-items: flex-end;
+}
+
+.sc-ion-popover-ios-h {
+    --background: var(--ion-background-color, #383a3e);
+}
+
+.popover-content{
+    top: 454.5px !important;
+}
+
+app-keyboard.ion-page{
+    background-color: #d7d8da;
+}
+
+.sc-ion-modal-ios-h:first-of-type {
+    --backdrop-opacity: 0;
+}
+
+.d-flex{
+    display: flex;
+}
